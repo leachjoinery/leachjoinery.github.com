@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Leach Joinery</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="all-min.js"></script>
+    <script type="text/javascript">
+      
+      var messages = [
+      '(1/10) A loft conversion which I constructed at a terraced property',
+      '(2/10) A kitchen that I fitted',
+      '(3/10) A bay window that I installed',
+      '(4/10) This is a laminate floor that I installed',
+      '(5/10) This is a hand-made gate that I constructed',
+      '(6/10) This is the staircase which leads to the loft conversion',
+      '(7/10) Some patio doors that I fitted',
+      '(8/10) A uPVC window that I installed',
+      '(9/10) A pair of internal doors that I fitted',
+      '(10/10) A porch roof that I constructed'
+      ];
+      
+      var idx = -2;
+      
+      function next_msg() {
+
+        if(idx == -2) {
+
+          document.getElementById('description').innerHTML = 
+      
+          'Here is a gallery displaying some of my work. The first ' +
+          'picture is from a loft conversion that I constructed at ' +
+          'a terraced property. Click the images to scan through the ' +
+          'gallery. If this javascript gallery does not work for you ' +
+          'then please take a look at the plain portfolio page ' +
+          '<a href="portfolio_plain.html">here</a>.';
+      
+          ++idx;
+          return;
+        }
+
+        if(idx == -1) {
+          document.getElementById('main').style.textAlign = "center";
+          ++idx;
+        }
+      
+        if(++idx == messages.length) idx = 0;
+
+        document.getElementById('description').innerHTML = messages[idx];
+
+      }
+      
+    </script>
+  </head>
+  <body onload="next_msg();$('#myGallery').spacegallery({loadingClass: 'loading', before: next_msg})">
+    
+    <div id="container">
+      <div id="header"></div>
+
+      <div id="tabs">
+	<div id="tabstart"></div>
+	<div id="tab"><h2><a href="index.html">About</a></h2></div>
+	<div id="redleft"></div>
+	<div id="red"><h2>Portfolio</h2></div>
+	<div id="redright"></div>
+	<div id="tab"><h2><a href="contact.html">Contact</a></h2></div>
+	<div id="tabend"></div>
+      </div>
+
+      <div id="main">
+	<div id="description">
+	  The javascript gallery is loading. If this does not work for
+	  you then please view the plain version of my
+	  portfolio <a href="portfolio_plain.html">here</a>.
+	</div>
+	<div id="myGallery" class="spacegallery">
+	  <img src="images/porch_roof.jpg"/>
+	  <img src="images/internal_doors.jpg"/>
+	  <img src="images/window.jpg"/>
+	  <img src="images/patio_door.jpg"/>
+	  <img src="images/staircase.jpg"/>
+	  <img src="images/back_door.jpg"/>
+	  <img src="images/laminate_floor.jpg"/>
+	  <img src="images/bay_window.jpg"/>
+	  <img src="images/kitchen.jpg"/>
+	  <img src="images/loft_conversion.jpg"/>
+	</div>
+	For more, see my latest photos on <a href="http://www.facebook.com/pages/Leach-Joinery/201817349849481?sk=photos">Facebook</a>.
+      </div>
+      <div id="bottom"></div>
+      <div id="footer">
+	Thanks to <a href="http://www.grsites.com">grsites.com</a>
+	&amp; <a href="http://www.eyecon.ro/spacegallery">eyecon.ro</a>
+      </div>
+    </div>
+  </body>
+</html>

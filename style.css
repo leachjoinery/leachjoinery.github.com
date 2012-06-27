@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font: 12px Verdana, sans-serif;
+	background-image:url(tiles/lj_back.jpg);
+	background-repeat:repeat-xy;
+}
+
+*
+{
+margin:0px;
+padding:0px;
+}
+
+#container
+{
+    width:775px;
+    margin:0px auto 0px auto;
+    background-image:url(tiles/grad.png);
+    background-repeat:repeat-y;
+}
+
+#header
+{
+    clear:both;
+    height:130px;
+    background-image:url(tiles/lj_logo.png);
+    background-repeat:no-repeat;	
+    background-position:40px 15px;
+}
+
+#main
+{
+    display:block;
+    clear:both;
+    line-height:175%;
+    font-size:18px;
+    padding-left:80px;
+    padding-right:80px;
+    padding-top:20px;
+    padding-bottom:100px;
+    background-image:url(tiles/middle.png);
+    background-repeat:repeat-y;
+}
+
+#main ul
+{
+    padding-top:10px;
+    margin-left:80px;
+}
+
+#bottom
+{
+    display:block;
+    clear:both;
+    height:60px;
+    background-image:url(tiles/bottom.png);
+    background-repeat:no-repeat;
+}
+
+#tabs
+{
+    height:100px;
+    padding-left:105px;
+    padding-right:105px;
+    text-align:center;
+    background-image:url(tiles/top.png);
+    background-repeat:no-repeat;
+}
+
+#red
+{
+    float:left;
+    min-height:53px;
+    min-width:120px;
+    overflow:hidden;
+    padding-top:18px;
+    background-image:url(tiles/red.png);
+    background-repeat:repeat-x;
+}
+
+#tab
+{
+    float:left;
+    min-height:53px;
+    min-width:120px;
+    overflow:hidden;
+    padding-top:18px;
+    background-image:url(tiles/tab.png);
+    background-repeat:repeat-x;
+}
+
+#tabstart, #tabend, #tabup, #tabdown, #redstart, #redend, #redleft, #redright
+{
+    float:left;
+    height:53px;
+    width:46px;
+    background-repeat:no-repeat;
+}
+
+#tabstart
+{
+    background-image:url(tiles/tabstart.png);
+}
+
+#tabend
+{
+    background-image:url(tiles/tabend.png);
+}
+
+#tabup
+{
+    background-image:url(tiles/tabup.png);
+}
+
+#tabdown
+{
+    background-image:url(tiles/tabdown.png);
+}
+
+#redstart
+{
+    background-image:url(tiles/redstart.png);
+}
+
+#redend
+{
+    background-image:url(tiles/redend.png);
+}
+
+#redleft
+{
+    background-image:url(tiles/redleft.png);
+}
+
+#redright
+{
+    background-image:url(tiles/redright.png);
+}
+
+a,a:visited
+{
+    text-decoration:none;
+    color:#AA4400;
+}
+
+a:hover
+{
+    color:#333300;
+}
+
+#tabs h2
+{
+    color:#CD6600;
+}
+
+#description {
+ line-height:150%;
+ font-size:16px;
+ margin-bottom:10px;
+}
+
+#footer
+{
+padding-right:40px;
+font-family:monospace;
+font-size:10px;
+text-align:right;
+}
+.spacegallery {
+	position: relative;
+	overflow: hidden;
+}
+.spacegallery img {
+	position: absolute;
+	left: 50%;
+}
+.spacegallery a {
+	position: absolute;
+	z-index: 1000;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(tiles/blank.gif);
+}
+#myGallery {
+    width: 100%;
+    height: 580px;
+}
+#myGallery img {
+	border: 1px solid #444444;
+}
+a.loading {
+	background: #fff url(tiles/ajax_small.gif) no-repeat center;
+}
